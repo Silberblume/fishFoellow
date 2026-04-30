@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fish-foellow"
-version = "0.0.1"
+dynamic = "version"
 dynamic = ["dependencies"]
 # version = "0.0.1"
 authors = [
@@ -29,6 +29,8 @@ keywords = ["fish", "track", "visualize", "trail", "heat", "heatmap", "heat-trai
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
 
+[tool.hatch.version]
+path = "src/fish_foellow/__init__.py"
 [project.urls]
 Homepage = "https://github.com/Silberblume/fishFoellow"
 Issues = "https://github.com/Silberblume/fishFoellow/issues"

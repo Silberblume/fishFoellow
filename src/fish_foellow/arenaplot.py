@@ -16,7 +16,8 @@ def cfactor():
     return destxy
 
 
-def createarena(rad=30):  # rad in px, pos X = cx + r*cos(θ), assuming cx = cy = 0
+def createarena(rad=30):  # rad in px, pos X = cx + r*cos(θ), assuming cx = cy = 0 # Is this necssary? Can we just refer to pixels straight away?
+
     coords = []
     # area = math.pi * rad ** 2
     # circumference = 2 * math.pi * rad
@@ -28,7 +29,7 @@ def createarena(rad=30):  # rad in px, pos X = cx + r*cos(θ), assuming cx = cy 
 
 #print('hi')
 
-# if __name__ == '__main__':
+# if __name__ == '__main__':np.linspace(0, 2 * np.pi, 1000)
 #     createarena()
 #     coords = createarena()
 #     print('hi')
