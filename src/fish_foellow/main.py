@@ -11,6 +11,8 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
+        # elif event.type == "tick":
+        #     draw.fish(frameNumber)
     screen.blit(test_surface, cfactor())
     pygame.display.flip()
     pygame.display.update()
